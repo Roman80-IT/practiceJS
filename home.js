@@ -1,7 +1,7 @@
 const pizzaPalace = {
   pizzas: ["Ultracheese", "Smoked", "Four meats"],
   order(pizzaName, onSuccess, onError) {
-  if (!this.pizzas.includes(pizzaName)) {
+    if (!this.pizzas.includes(pizzaName)) {
       return onError(
         `There is no pizza with a name ${pizzaName} in the assortment.`
       );
@@ -26,3 +26,5 @@ pizzaPalace.order("Smoked", makePizza, onOrderError);
 pizzaPalace.order("Four meats", makePizza, onOrderError);
 pizzaPalace.order("Big Mike", makePizza, onOrderError);
 pizzaPalace.order("Vienna", makePizza, onOrderError);
+
+// node PRACTICEJS/home
